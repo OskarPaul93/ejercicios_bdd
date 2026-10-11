@@ -51,6 +51,10 @@ update estudiantes set curso = 'Inteligencia Artificial', fecha_registro = '2026
 update estudiantes set apellidos = 'martinez', fecha_registro = '2026-04-10' where id_estudiante = 5;
 
 
-
-
+--Delete o eliminar
+delete from estudiantes where id_estudiante = 15;
+delete from estudiantes where id_estudiante = 13 and curso = 'Programacion';
+delete from estudiantes where edad = 19;
+delete from estudiantes where fecha_registro = '2026-02-18';
+delete from estudiantes where apellidos = 'ortiz';
 
