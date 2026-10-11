@@ -58,3 +58,26 @@ delete from estudiantes where edad = 19;
 delete from estudiantes where fecha_registro = '2026-02-18';
 delete from estudiantes where apellidos = 'ortiz';
 
+alter table estudiantes
+add column correo VARCHAR (100);
+
+--Update correo
+update estudiantes set correo = 'aa@gmail.com' where id_estudiante = 1;
+update estudiantes set correo = 'bb@gmail.com' where id_estudiante = 2;
+update estudiantes set correo = 'cc@gmail.com' where id_estudiante = 3;
+update estudiantes set correo = 'dd@gmail.com' where id_estudiante = 4;
+update estudiantes set correo = 'ff@gmail.com' where id_estudiante = 5;
+update estudiantes set correo = 'gg@gmail.com' where id_estudiante = 6;
+update estudiantes set correo = 'hh@gmail.com' where id_estudiante = 7;
+update estudiantes set correo = 'ii@gmail.com' where id_estudiante = 8;
+update estudiantes set correo = 'jj@gmail.com' where id_estudiante = 9;
+update estudiantes set correo = 'kk@gmail.com' where id_estudiante = 10;
+update estudiantes set correo = 'll@gmail.com' where id_estudiante = 11;
+update estudiantes set correo = 'mm@gmail.com' where id_estudiante = 12;
+update estudiantes set correo = 'nn@gmail.com' where id_estudiante = 13;
+update estudiantes set correo = 'oo@gmail.com' where id_estudiante = 14;
+update estudiantes set correo = 'pp@gmail.com' where id_estudiante = 15;
+
+
+
+select nombres, apellidos, curso, correo from estudiantes where curso = 'Programacion';
