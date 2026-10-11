@@ -41,3 +41,16 @@ select * from estudiantes where curso = 'Base de datos'
 select * from estudiantes where fecha_registro > '2026-03-01'
 
 select * from estudiantes where fecha_registro >= '2026-01-01' and fecha_registro<= '2026-04-30'
+
+
+--Update o actualizar
+update estudiantes set curso = 'Matematicas' where apellidos = 'Andrango';
+update estudiantes set edad = 25 where apellidos = 'Lopez';
+update estudiantes set fecha_registro = '2026-04-15' where apellidos = 'Gomez';
+update estudiantes set curso = 'Inteligencia Artificial', fecha_registro = '2026-04-20' where id_estudiante = 2;
+update estudiantes set apellidos = 'martinez', fecha_registro = '2026-04-10' where id_estudiante = 5;
+
+
+
+
+
