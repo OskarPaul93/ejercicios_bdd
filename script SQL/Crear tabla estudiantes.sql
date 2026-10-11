@@ -81,3 +81,12 @@ update estudiantes set correo = 'pp@gmail.com' where id_estudiante = 15;
 
 
 select nombres, apellidos, curso, correo from estudiantes where curso = 'Programacion';
+
+
+--Consultas
+
+select * from estudiantes where fecha_registro> '2026-02-01';
+select * from estudiantes where fecha_registro < '2026-05-01';
+select * from estudiantes where fecha_registro >= '2026-02-01' and fecha_registro <= '2026-03-31';
+select * from estudiantes where fecha_registro = '2026-03-15';
+select * from estudiantes where curso = 'Programacion' and fecha_registro > '2026-01-01';
