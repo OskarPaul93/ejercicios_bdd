@@ -8,7 +8,7 @@ create table estudiantes (
 
 )
 
-select * from estudiantes;
+
 
 --Insertar datos o agregarlos
 insert into estudiantes values (1, 'Ana','Andrango',15,'Programacion','2026-01-10');
@@ -27,6 +27,17 @@ insert into estudiantes values (13, 'Gabriel', 'Morales', 20, 'Programacion', '2
 insert into estudiantes values (14, 'Valentina', 'Ortiz', 22, 'Redes', '2026-03-10');
 insert into estudiantes values (15, 'Pedro', 'Ramirez', 21, 'Matematicas', '2026-03-15');
 
+--Consultas
+select * from estudiantes;
 
+select nombres, curso from estudiantes ;
 
+select * from estudiantes where edad > 18;
 
+select * from estudiantes where edad >= 18 and edad <= 25;
+
+select * from estudiantes where curso = 'Base de datos'
+
+select * from estudiantes where fecha_registro > '2026-03-01'
+
+select * from estudiantes where fecha_registro >= '2026-01-01' and fecha_registro<= '2026-04-30'
